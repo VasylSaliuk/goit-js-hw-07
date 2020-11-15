@@ -1,0 +1,10 @@
+.inline-flex {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: cadetblue;
+}
+
+ul {
+  list-style: none;
+}
