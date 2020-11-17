@@ -7,15 +7,15 @@ const ingredients = [
     'Приправы',
   ];
 
-  const listIngredients = document.querySelector('#ingredients');
-
-  const createListIngredients = (ingredient) => {
-      const createLi = document.createElement('li');
-      createLi.textContent = ingredient;
-      listIngredients.appendChild(createLi);
-      return createLi;
-  }
+const listIngredientsRef = document.querySelector('#ingredients');
+const itemsArray = []
 
 ingredients.map(ingredient => createListIngredients(ingredient));
 
-console.log(listIngredients);
+function createListIngredients(ingredient) {
+  const createLi = document.createElement('li');
+  createLi.textContent = ingredient;
+  itemsArray.push(createLi);
+}
+
+listIngredientsRef.append(...itemsArray)

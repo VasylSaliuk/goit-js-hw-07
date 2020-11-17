@@ -4,7 +4,7 @@ const output = document.getElementById('name-output');
 input.addEventListener("input", inputChange);
 
 function inputChange(event) {
-    input.value === "" 
-    ? output.textContent = "незнакомец" 
-    : output.textContent = event.currentTarget.value;
+    output.textContent = input.value === "" 
+    ? "незнакомец" 
+    : event.currentTarget.value;
 }

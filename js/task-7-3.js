@@ -17,7 +17,7 @@ const images = [
   ];
 
   const insertGallery = document.querySelector('#gallery');
-//   insertGallery.style.background = "teal";
+  
   insertGallery.classList.add("inline-flex");
 
   function createListGallery(array, place) {
@@ -25,8 +25,8 @@ const images = [
       let li = `<li class="list-item"><img src="${obj.url}" alt="${obj.alt}" width="300"></li>`
       return li;
     });
-    // console.log(arrayItems);
-    const ul = `<ul>${arrayItems}</ul>`
+
+    const ul = `<ul>${arrayItems.join('')}</ul>`
     place.insertAdjacentHTML("afterbegin", ul);
     return ul;
 }

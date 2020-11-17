@@ -1,8 +1,13 @@
 .inline-flex {
   padding: 20px;
+  margin: 20px;
   display: flex;
   justify-content: center;
   background-color: cadetblue;
+}
+
+img {
+  margin: 10px;
 }
 
 ul {
