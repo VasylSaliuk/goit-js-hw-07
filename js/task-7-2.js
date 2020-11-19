@@ -8,14 +8,13 @@ const ingredients = [
   ];
 
 const listIngredientsRef = document.querySelector('#ingredients');
-const itemsArray = []
 
-ingredients.map(ingredient => createListIngredients(ingredient));
+const itemsArray = ingredients.map(ingredient => createListIngredients(ingredient));
 
 function createListIngredients(ingredient) {
   const createLi = document.createElement('li');
   createLi.textContent = ingredient;
-  itemsArray.push(createLi);
+  return createLi;
 }
 
 listIngredientsRef.append(...itemsArray)
